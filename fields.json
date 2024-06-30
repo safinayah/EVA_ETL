@@ -1,0 +1,26 @@
+[
+  {
+    "table_name": "medical_records",
+    "values": [
+      "Blood Type",
+      "Weight",
+      "Name",
+      "Age"
+    ],
+    "field_name": "name",
+    "pivot_index": "patient_id",
+    "pivot_columns": "attribute_name",
+    "pivot_values": "value",
+    "other_fields": ["patient_id", "record_timestamp"],
+    "datetime_field": "record_timestamp"
+  },
+  {
+    "table_name": "test_results",
+    "values": [
+      "BloodType",
+      "TestResult"
+    ],
+    "field_name": "original_field",
+    "datetime_field": "test_timestamp"
+  }
+]
